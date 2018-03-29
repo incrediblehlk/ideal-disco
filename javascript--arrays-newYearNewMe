@@ -1,0 +1,45 @@
+// create an array of 3 items
+let newYearsResolutions = ['Eat kale for every meal', 'Throw a party for a stranger', 'Literally never stop doing yoga'];
+
+// thing that will write my resolutions if I don't want to type it out anymore
+// (Note: Codecademy can't see this method so I have to do it the old way still)
+// can do console.log(newYearNewMe); to get it to show up
+// let newYearNewMe = ("All my resolutions: " + newYearsResolutions);
+
+// log resolutions
+console.log(newYearsResolutions);
+
+// create a variable for the first thing in the array
+let listItem = newYearsResolutions[0];
+
+// print the first thing in the array using this variable
+console.log('First thing in the array: ' + listItem);
+
+// print the third thing in the array
+console.log('Third thing in the array: ' + newYearsResolutions[2]);
+
+// "Change the second element of your newYearsResolutions array to be, 'Learn a new language'."
+newYearsResolutions[1] = 'Learn a new language';
+
+//log resolutions
+console.log(newYearsResolutions);
+
+// Find the length of your newYearsResolutions array and log it to the console.
+// (this represents how many items are stored in the array)
+console.log('Number of new year\'s resolutions I have: ' + newYearsResolutions.length);
+
+// Add two more items to your newYearsResolutions array using .push().
+newYearsResolutions.push('Get 7 more cats');
+newYearsResolutions.push('Build the largest pillow fort in the world');
+
+
+// Now, use console.log to print your newYearsResolutions array to make sure your items were added.
+// log resolutions
+console.log(newYearsResolutions);
+
+// Use the .pop() method to remove the last element from your array.
+newYearsResolutions.pop();
+
+// log again
+console.log(newYearsResolutions);
+

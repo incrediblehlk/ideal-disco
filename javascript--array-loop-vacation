@@ -1,0 +1,30 @@
+// Write an array and set it equal to a variable named vacationSpots. Inside of this array, list three places you'd like to visit.
+let vacationSpots = ['Germany', 'France', 'Sweden'];
+
+// Next, console.log() each item in vacationSpots on a separate line. To do this, list out each item using property access.
+// console.log(vacationSpots[0]);
+// console.log(vacationSpots[1]);
+// console.log(vacationSpots[2]);
+
+// Instead of writing out the same code over and over, lets make the computer loop through our array for us. We can do this with for loops.
+
+// Write a for loop that loops through your vacationSpots array. 
+// Use vacationSpotIndex as your iterator variable.
+// Inside the block of the for loop, use console.log() to print each item in the vacationSpots array.
+// add text to the console.log() statement, like this: 'I would love to visit '
+// for (let vacationSpotIndex = 0; vacationSpotIndex < vacationSpots.length; vacationSpotIndex++) { console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]); }
+
+// We can make our loop run backward by modifying the start, stop, and iterator conditions.
+// Edit the start condition to set vacationSpotIndex equal to the length of the vacationSpots array.
+// Then, set the stop condition to when vacationSpotIndex is greater than or equal to 0.
+// Finally, change vacationSpotIndex++ to vacationSpotIndex-- to subtract 1 from the iterator variable each loop.
+// for (let vacationSpotIndex = vacationSpots.length; vacationSpotIndex >= 0; vacationSpotIndex--) {console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);}
+
+// Nice work! Except we printed I would love to visit undefined.
+// This happened because the length of vacationSpots is 3 so the loop attempted to print vacationSpots[3] which does not exist.
+// Because arrays start counting at 0, the start condition needs to be the length of the vacationSpots array minus 1.
+
+for (let vacationSpotIndex = vacationSpots.length-1; vacationSpotIndex >= 0; vacationSpotIndex--) {
+  console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
+}
+

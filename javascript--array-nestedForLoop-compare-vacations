@@ -1,0 +1,33 @@
+// Let's say that you and a friend would like to go on vacation together. You've both made arrays of your favorite places and you want to compare to see if any of them match. This is a job for loops!
+
+// We are going to write this program from scratch. Start out by writing a variable named myPlaces and set it equal to an array with three places you'd like to visit.
+let myPlaces = ['Berlin', 'Boston', 'Chicago'];
+
+// Now, make another variable named friendPlaces and set it equal to an array with three places a friend might like to visit.
+// Make sure that at least one of the places is the same as in your myPlaces array.
+let friendPlaces = ['Tokyo', 'Dublin', 'Berlin'];
+
+// Write a for loop that iterates through each item in myPlaces and logs out each place.
+// Use myPlacesIndex as the iterator variable.
+// Inside of the existing for loop's block, below the console.log() statement, write another for loop that loops over friendPlaces. This time, rather than using the myPlacesIndex as the variable name, use friendPlacesIndex. Doing so will prevent us from overwriting any variables. Log each of your friend's places to the console.
+//for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
+//    console.log(myPlaces[myPlacesIndex]);
+//  for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
+//    console.log(friendPlaces[friendPlacesIndex]);
+//  }
+//}
+
+// Your first place printed, then all three of your friend's. Then your second place, then your friend's places again. Finally, your third place printed and all three of your friend's places printed a final time.
+// This is because the inner for loop runs completely every time the outer for loop runs once.
+// The purpose of the program is to see what you and your friend have in common. Let's utilize the === comparison with an if statement.
+// Delete the two console.log() statements you wrote in the previous steps.
+// Inside the second for loop's block, write an if statement that checks if myPlaces[myPlacesIndex] is equal to friendPlaces[friendPlacesIndex]. If it is, log to the console the place you have in common.
+for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
+  for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
+    if (myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) {
+      console.log (myPlaces[myPlacesIndex]);
+    }
+  }
+}
+
+
